@@ -4,8 +4,9 @@ const child = document.querySelector(".child");
 console.log(grandParent);
 console.log(parent);
 console.log(child);
-grandParent.addEventListener('click', e => console.log(e))
-grandParent.addEventListener('mouseover', (e) => console.log(e.target))
-
+grandParent.addEventListener('click', () => console.log('grandparent'))
+parent.addEventListener('click', () => console.log('parent'))
+child.addEventListener('click', () => console.log('child'))
+document.addEventListener('click', () => console.log('document'))
 
 
