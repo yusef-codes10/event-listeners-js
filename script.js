@@ -9,4 +9,7 @@ parent.addEventListener('click', () => console.log('parent'))
 child.addEventListener('click', () => console.log('child'))
 document.addEventListener('click', () => console.log('document'))
 
+// to pervent event progration
+
+// TODO complete throguth event propagation
 
