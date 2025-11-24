@@ -12,17 +12,14 @@ body {
     align-items: center;
 }
 
-.grand-parent {
-    padding: 4rem;
-    background-color: red;
+.container {
+    padding: 3rem;
+    background-color: aqua;
+    display: inline-flex;
 }
 
-.parent {
-    padding: 4rem;
-    background-color: blue;
-}
-
-.child {
-    padding: 4rem;
-    background-color: green;
+button, input {
+    border: 2px solid black;
+    border-radius: 1000px;
+    padding: 12px 16px;
 }

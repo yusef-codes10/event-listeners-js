@@ -1,15 +1,5 @@
-const grandParent = document.querySelector(".grand-parent");
-const parent = document.querySelector(".parent");
-const child = document.querySelector(".child");
-console.log(grandParent);
-console.log(parent);
-console.log(child);
-grandParent.addEventListener('click', () => console.log('grandparent'), {capture: true})
-parent.addEventListener('click', () => console.log('parent'))
-child.addEventListener('click', () => console.log('child'))
-document.addEventListener('click', () => console.log('document'))
+const username = document.getElementById('username');
+const clickBtn = document.getElementById('clickBtn');
 
-// to pervent event progration
 
-// TODO complete throguth event propagation
-
+clickBtn.addEventListener('click', () => window.alert(`your name is ${username.value}`));
