@@ -15,6 +15,10 @@ const userChoiceBtn = document.getElementById('userChoiceBtn') ;
 userChoiceBtn.addEventListener('click', () => {
     if (usernameRadio.checked) {
         console.log('username mode');
+        const usernameInput = document.createElement('input');
+        const userInputContainer = document.querySelector('.user-input');
+        usernameInput.classList = 'input';
+        userInputContainer.append(usernameInput);
     } else if (ageRadio.checked) {
         console.log('age mode');
     }
@@ -29,4 +33,8 @@ const ageRadio = document.getElementById('ageRadio');
 
 function closeDialog() {
     dialog.close();
+}
+
+function createUserInput() {
+    
 }
