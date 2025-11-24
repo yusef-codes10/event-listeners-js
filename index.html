@@ -1,30 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Event Listeners</title>
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="user-input">
-        <label for="username">Choose what to add?</label>
-        <button id="clickBtn">click</button>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Injection Test</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h2>HTML Injection Test</h2>
 
-        <!-- <input type="text" id="username"> -->
-      </div>
-    </div>
-    <dialog id="dialog">
-      <h2>Choose:</h2>
-      <div class="user-inputs"></div>
-      <input type="radio" name="dialog" id="usernameRadio" />
-      <label for="usernameRadio">username</label>
-      <input type="radio" name="dialog" id="ageRadio" />
-      <label for="ageRadio">age</label>
-      <button id="userChoiceBtn">Submit</button>
-      <button id="cancelBtn">Cancel</button>
-    </dialog>
-  </body>
+  <input id="userInput" placeholder="Type something..." />
+  <button id="addBtn">Add to Page</button>
+
+  <h3>Output:</h3>
+  <div id="output"></div>
+</body>
 </html>
